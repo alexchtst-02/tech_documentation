@@ -1,0 +1,22 @@
+% Copy a pattern below into a content/*.tex file.
+% Put the corresponding image in assets/ and replace the filename, prose,
+% caption, and label with module-specific content.
+
+% 1:1 — image fills the printable text width on a portrait page.
+\ModuleDiagram{overview.png}
+  {Caption describing the complete architecture or state flow.}
+  {fig:overview}
+
+% 2:1 — image uses half the printable width on the left; explanation is right.
+\HalfModuleDiagram{data_path.png}
+  {\textbf{What this view shows}\par
+   Explain the main data path and the conditions that control it.}
+  {Caption describing the data path.}
+  {fig:data-path}
+
+% 5:1 — image uses one-fifth of printable width on the left; text is right.
+% Use this for a small signal mark, symbol, or compact detail.
+\FifthModuleDiagram{handshake_mark.png}
+  {Explain the signal or detail and when it matters to this module.}
+  {Caption describing the small detail.}
+  {fig:handshake-mark}

@@ -1,0 +1,62 @@
+\chapter{Verification and Evidence}
+
+\section{Verification Scope and Strategy}
+\textit{[State what is verified at module level, in top-level integration, and on hardware if applicable. Identify methods actually used: directed or randomized simulation, assertions, Python checks, notebooks, formal tools, or board tests. Keep functional verification distinct from build and timing results.]}
+
+\section{Test Plan and Pass Criteria}
+Define stimulus, expected response, execution conditions, and pass criteria before recording results. Every pass must point to a specific run.
+
+\begin{tabularx}{\textwidth}{@{}p{16mm}p{24mm}X p{26mm}@{}}
+  \toprule
+  Test & Requirement & Stimulus, check, and pass criterion & Status \\
+  \midrule
+  VER-01 & REQ-01 & \textit{[Case, oracle, result limit]} & Not run \\
+  \bottomrule
+\end{tabularx}
+
+\section{Execution Environment}
+\textit{[Record RTL and testbench commits, test top-level, parameters, simulator and version, Python dependencies, random seed, clock/reset, command, and run date. For notebooks, record kernel and execution order. For FPGA tests, identify the board and bitstream.]}
+
+\section{Verification Figures}
+Use the full-width layout for a complete multi-signal trace, the half-width layout for a focused waveform beside its explanation, or the fifth-width layout for a compact protocol marker. Keep every page portrait and use only the supported 1:1, 2:1, and 5:1 paper-width:image-width ratios.
+
+% 1:1 verification overview or complete waveform.
+% \ModuleDiagram{verification_overview.pdf}
+%   {Signals and interval demonstrating the stated verification result.}
+%   {fig:verification-overview}
+
+% 2:1 focused waveform with the image on the left.
+% \HalfModuleDiagram{handshake_waveform.pdf}
+%   {Explain the stimulus, observed handshakes, and pass criterion shown.}
+%   {Focused verification waveform.}
+%   {fig:handshake-waveform}
+
+% 5:1 compact marker or local timing detail with the image on the left.
+% \FifthModuleDiagram{protocol_marker.pdf}
+%   {Explain the marked edge or single-cycle event.}
+%   {Protocol timing detail.}
+%   {fig:protocol-marker}
+
+\section{Results and Analysis}
+\textit{[For each VER-ID, state the actual result and pass/fail/not-run status, compare it with the pass criterion, explain deviations, and cite the artifact path and run ID. Include units for numerical results.]}
+
+\section{Requirements-to-Evidence Matrix}
+\begin{tabularx}{\textwidth}{@{}p{24mm}p{20mm}X@{}}
+  \toprule
+  Requirement & Test & Evidence (repository-relative path, commit/run ID) \\
+  \midrule
+  REQ-01 & VER-01 & \textit{[Fill in after evidence and results are available]} \\
+  \bottomrule
+\end{tabularx}
+
+\section{Evidence Artifact Types}
+\begin{tabularx}{\textwidth}{@{}p{18mm}X X@{}}
+  \toprule
+  Format & Role & Record \\
+  \midrule
+  \texttt{.txt} & Log or tool output & Command, final status, and key result lines \\
+  \texttt{.vcd} & Signal transition trace & Signals, time range, and behavior demonstrated \\
+  \texttt{.py} & Stimulus, checker, or analysis & Invocation, dependencies, and result \\
+  \texttt{.ipynb} & Interactive experiment or analysis & Kernel, input data, cell order, and reproduced result \\
+  \bottomrule
+\end{tabularx}

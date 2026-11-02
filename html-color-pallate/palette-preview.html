@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Technical Documentation — Color Directions</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; padding: 40px 24px 64px; background: #eef1f4; color: #233040; font: 16px/1.5 Lato, Arial, sans-serif; }
+    main { max-width: 1240px; margin: auto; }
+    h1 { font-size: 27px; margin: 0 0 5px; }
+    .intro { margin: 0 0 27px; color: #506071; }
+    .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
+    .option { --paper: #f7fafc; --ink: #1e3347; --accent: #17689a; --muted: #56697a; --rule: #d9e4ed; }
+    .option.forest { --paper: #f7faf7; --ink: #203a32; --accent: #1b7358; --muted: #5c7068; --rule: #dae7de; }
+    .option.plum { --paper: #faf8fb; --ink: #292b39; --accent: #8b3e73; --muted: #626172; --rule: #e8dde7; }
+    .option > h2 { margin: 0 0 6px; font-size: 20px; }
+    .option > p { min-height: 48px; margin: 0 0 14px; color: #506071; font-size: 14px; }
+    .paper { min-height: 520px; display: flex; flex-direction: column; background: #fff; box-shadow: 0 3px 16px #28384b1c; color: var(--ink); }
+    .cover { background: var(--paper); padding: 32px 30px 24px; min-height: 230px; display: flex; flex-direction: column; }
+    .accent-line { width: 38px; height: 3px; background: var(--accent); margin-bottom: 14px; }
+    .eyebrow { color: var(--accent); font-size: 10px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+    .cover-title { margin-top: 35px; font-size: 26px; line-height: 1.12; font-weight: 700; }
+    .cover-sub { color: var(--muted); font-size: 13px; margin-top: 10px; }
+    .page { display: flex; flex: 1; flex-direction: column; padding: 26px 30px 20px; }
+    .chapter-label { background: var(--paper); padding: 4px 7px; color: var(--accent); font-size: 10px; font-weight: 700; letter-spacing: .07em; }
+    .chapter-title { margin: 11px 0 11px; font-size: 20px; line-height: 1.18; font-weight: 700; }
+    .chapter-rule { height: 2px; background: var(--accent); }
+    .section { margin: 22px 0 5px; font-size: 13px; font-weight: 700; }
+    .body-copy { font: 12px/1.5 'TeX Gyre Pagella', Georgia, serif; margin: 0; }
+    .footer { margin-top: auto; padding-top: 12px; border-top: 1px solid var(--rule); display: flex; justify-content: space-between; color: var(--muted); font-size: 10px; }
+    .page-no { color: var(--accent); }
+    .swatches { display: grid; grid-template-columns: repeat(5, 1fr); gap: 7px; margin-top: 14px; }
+    .swatch { min-width: 0; }
+    .chip { height: 24px; border: 1px solid #0002; border-radius: 3px; }
+    .swatch code { display: block; margin-top: 4px; color: #485768; font-size: 10px; overflow-wrap: anywhere; }
+    .note { margin-top: 26px; color: #526172; font-size: 13px; }
+    @media (max-width: 1000px) { .grid { grid-template-columns: 1fr; } .option > p { min-height: 0; } .paper { max-width: 490px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Color directions for the RTL document</h1>
+    <p class="intro">Same typography and layout; only the palette changes. These are previews, not changes to the LaTeX PDF.</p>
+    <div class="grid">
+      <section class="option">
+        <h2>01 · Blueprint</h2>
+        <p>Clear, technical blue. A restrained choice for diagrams and measurement tables.</p>
+        <div class="paper">
+          <div class="cover"><div class="accent-line"></div><div class="eyebrow">Hardware module / technical documentation</div><div class="cover-title">Async FIFO</div><div class="cover-sub">RTL architecture and verification</div></div>
+          <div class="page"><div class="chapter-label">CHAPTER 5</div><div class="chapter-title">RTL Implementation and Build Results</div><div class="chapter-rule"></div><div class="section">5.1 Verilog Module Implementation</div><p class="body-copy">Document the datapath, control logic, and clock-domain boundaries. Every engineering decision is linked to its evidence.</p><div class="footer"><span>Async FIFO | rev 0.1</span><span class="page-no">5</span></div></div>
+        </div>
+        <div class="swatches"><div class="swatch"><div class="chip" style="background:#f7fafc"></div><code>#F7FAFC</code></div><div class="swatch"><div class="chip" style="background:#1e3347"></div><code>#1E3347</code></div><div class="swatch"><div class="chip" style="background:#17689a"></div><code>#17689A</code></div><div class="swatch"><div class="chip" style="background:#56697a"></div><code>#56697A</code></div><div class="swatch"><div class="chip" style="background:#d9e4ed"></div><code>#D9E4ED</code></div></div>
+      </section>
+      <section class="option forest">
+        <h2>02 · Evergreen</h2>
+        <p>Calm green with a softer engineering feel, especially good for long reading.</p>
+        <div class="paper">
+          <div class="cover"><div class="accent-line"></div><div class="eyebrow">Hardware module / technical documentation</div><div class="cover-title">Async FIFO</div><div class="cover-sub">RTL architecture and verification</div></div>
+          <div class="page"><div class="chapter-label">CHAPTER 5</div><div class="chapter-title">RTL Implementation and Build Results</div><div class="chapter-rule"></div><div class="section">5.1 Verilog Module Implementation</div><p class="body-copy">Document the datapath, control logic, and clock-domain boundaries. Every engineering decision is linked to its evidence.</p><div class="footer"><span>Async FIFO | rev 0.1</span><span class="page-no">5</span></div></div>
+        </div>
+        <div class="swatches"><div class="swatch"><div class="chip" style="background:#f7faf7"></div><code>#F7FAF7</code></div><div class="swatch"><div class="chip" style="background:#203a32"></div><code>#203A32</code></div><div class="swatch"><div class="chip" style="background:#1b7358"></div><code>#1B7358</code></div><div class="swatch"><div class="chip" style="background:#5c7068"></div><code>#5C7068</code></div><div class="swatch"><div class="chip" style="background:#dae7de"></div><code>#DAE7DE</code></div></div>
+      </section>
+      <section class="option plum">
+        <h2>03 · Graphite + Plum</h2>
+        <p>Editorial and more expressive, with a plum accent rather than a warm orange.</p>
+        <div class="paper">
+          <div class="cover"><div class="accent-line"></div><div class="eyebrow">Hardware module / technical documentation</div><div class="cover-title">Async FIFO</div><div class="cover-sub">RTL architecture and verification</div></div>
+          <div class="page"><div class="chapter-label">CHAPTER 5</div><div class="chapter-title">RTL Implementation and Build Results</div><div class="chapter-rule"></div><div class="section">5.1 Verilog Module Implementation</div><p class="body-copy">Document the datapath, control logic, and clock-domain boundaries. Every engineering decision is linked to its evidence.</p><div class="footer"><span>Async FIFO | rev 0.1</span><span class="page-no">5</span></div></div>
+        </div>
+        <div class="swatches"><div class="swatch"><div class="chip" style="background:#faf8fb"></div><code>#FAF8FB</code></div><div class="swatch"><div class="chip" style="background:#292b39"></div><code>#292B39</code></div><div class="swatch"><div class="chip" style="background:#8b3e73"></div><code>#8B3E73</code></div><div class="swatch"><div class="chip" style="background:#626172"></div><code>#626172</code></div><div class="swatch"><div class="chip" style="background:#e8dde7"></div><code>#E8DDE7</code></div></div>
+      </section>
+    </div>
+    <p class="note">Swatch order: paper, ink, accent, muted text, rule. Each text color above exceeds 4.5:1 contrast against its paper color.</p>
+  </main>
+</body>
+</html>

@@ -1,0 +1,38 @@
+\chapter{RTL Implementation and Build Results}
+
+\section{RTL Structure and Behavior}
+\textit{[Explain module hierarchy, datapath, FSM, registers, parameters, interfaces, clocking, and reset as implemented. Link the implementation to design decisions and source files.]}
+
+\section{Build Target and Configuration}
+\textit{[Record top-level, defines and parameters, target FPGA and speed grade if applicable, tool version, constraints, target clock, and RTL commit. Distinguish a standalone RTL build from a top-level integrated build.]}
+
+\section{Synthesis Results}
+\textit{[Record run status, optimizations or inferences, relevant warnings, and report paths. Results must match the target and configuration above.]}
+
+\begin{tabularx}{\textwidth}{@{}p{37mm}X X@{}}
+  \toprule
+  Metric & Result & Report source / notes \\
+  \midrule
+  LUTs / logic cells & \textit{[Value]} & \textit{[Path and run]} \\
+  Flip-flops / registers & \textit{[Value]} & \textit{[Path and run]} \\
+  BRAM / memory & \textit{[Value]} & \textit{[Path and run]} \\
+  DSP & \textit{[Value]} & \textit{[Path and run]} \\
+  \bottomrule
+\end{tabularx}
+
+\section{Implementation Results}
+\textit{[Record place-and-route status, final resource use, timing results, DRC summary, constraints, and every unmet rule or path.]}
+
+\begin{tabularx}{\textwidth}{@{}p{37mm}X X@{}}
+  \toprule
+  Metric & Result & Report source / notes \\
+  \midrule
+  Final utilization & \textit{[Value]} & \textit{[Path and run]} \\
+  Worst negative slack & \textit{[Value, unit]} & \textit{[Path and run]} \\
+  Total negative slack & \textit{[Value, unit]} & \textit{[Path and run]} \\
+  DRC / timing violations & \textit{[Value]} & \textit{[Path and run]} \\
+  \bottomrule
+\end{tabularx}
+
+\section{Bitstream Generation and Artifact Traceability}
+\textit{[If the module is integrated into an FPGA top-level, record bitstream status, file name, target device, source commit, and warnings. Otherwise state why bitstream generation is not applicable. A successful build does not establish functional verification.]}
