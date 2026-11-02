@@ -12,7 +12,7 @@ Copy one preset over the active palette file, then rebuild the PDF:
 - Evergreen: `cp palette-options/evergreen.tex palette.tex`
 - Graphite + Plum: `cp palette-options/graphite-plum.tex palette.tex`
 
-The palette preview is in [`palette-preview.html`](html-color-pallate/palette-preview.html).
+Preview the HTML source in the repository at [`palette-preview.html`](html-color-pallate/palette-preview.html), or [open the rendered palette page](https://alexchtst-02.github.io/tech_documentation/html-color-pallate/palette-preview.html) on GitHub Pages.
 
 ## Use
 
