@@ -12,7 +12,9 @@ Copy one preset over the active palette file, then rebuild the PDF:
 - Evergreen: `cp palette-options/evergreen.tex palette.tex`
 - Graphite + Plum: `cp palette-options/graphite-plum.tex palette.tex`
 
-Preview the HTML source in the repository at [`palette-preview.html`](html-color-pallate/palette-preview.html), or [open the rendered palette page](https://alexchtst-02.github.io/tech_documentation/html-color-pallate/palette-preview.html) on GitHub Pages.
+Preview the HTML source in the repository at [`palette-preview.html`](preview/palette-preview.html), or [open the rendered palette page](https://alexchtst-02.github.io/tech_documentation/preview/palette-preview.html) on GitHub Pages.
+
+Rendered PDF examples use the same template content; only the palette changes: [BLUE PRINT](preview/blueprint.pdf) · [Evergreen](preview/evergreen.pdf) · [Graphite + Plum](preview/graphite-plum.pdf).
 
 ## Use
 
@@ -29,7 +31,7 @@ All figures are constrained to printable page width. The only supported ratios a
 
 ## Design references
 
-The first visual direction used a warm orange accent with a white background. It was replaced after review because it felt too warm and brand-like. BLUE PRINT, Evergreen, and Graphite + Plum are project-specific color choices, not copied from an external palette. Compare them in [`palette-preview.html`](palette-preview.html); the selected values are in `palette.tex`.
+The first visual direction used a warm orange accent with a white background. It was replaced after review because it felt too warm and brand-like. BLUE PRINT, Evergreen, and Graphite + Plum are project-specific color choices, not copied from an external palette. Compare them in [`palette-preview.html`](preview/palette-preview.html); the selected values are in `palette.tex`.
 
 | Element | Reference | Use in this template |
 | --- | --- | --- |
